@@ -63,6 +63,8 @@ int Update(int, char* [])
 
   db(u);
 
+  const auto count = db(update(t).set(t.beta = "John Doe"));
+  std::cout << count << std::endl;
   db(update(t).set(t.delta = sqlpp::verbatim<sqlpp::integer>("17+4")).unconditionally());
   db(update(t).set(t.delta = sqlpp::null).unconditionally());
   db(update(t).set(t.delta = sqlpp::default_value).unconditionally());
