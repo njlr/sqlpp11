@@ -1,0 +1,19 @@
+cxx_library(
+  name = 'tests',
+  header_namespace = '',
+  exported_headers = subdir_glob([
+    ('', '*.h'),
+  ]),
+  srcs = glob([
+    '*.cpp',
+  ]),
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+  deps = [
+    '//:sqlpp11',
+  ],
+)

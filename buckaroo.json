@@ -1,0 +1,6 @@
+{
+  "name": "sqlpp11",
+  "dependencies": {
+    "date": "2.1.0"
+  }
+}
