@@ -4,9 +4,6 @@ cxx_binary(
   srcs = [
     'result_row.cpp',
   ],
-  compiler_flags = [
-    '-std=c++14',
-  ],
   deps = [
     '//:sqlpp11',
     '//tests:tests',

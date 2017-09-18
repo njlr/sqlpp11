@@ -7,9 +7,6 @@ cxx_library(
   srcs = glob([
     '*.cpp',
   ]),
-  compiler_flags = [
-    '-std=c++14',
-  ],
   visibility = [
     'PUBLIC',
   ],

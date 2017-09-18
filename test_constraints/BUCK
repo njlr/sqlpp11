@@ -4,9 +4,6 @@ cxx_binary(
   srcs = [
     'count_of_count.cpp',
   ],
-  compiler_flags = [
-    '-std=c++14',
-  ],
   deps = [
     '//:sqlpp11',
     '//tests:tests',
@@ -18,9 +15,6 @@ cxx_binary(
   header_namespace = '',
   srcs = [
     'max_of_max.cpp',
-  ],
-  compiler_flags = [
-    '-std=c++14',
   ],
   deps = [
     '//:sqlpp11',
